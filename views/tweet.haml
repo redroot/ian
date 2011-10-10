@@ -1,0 +1,4 @@
+= @tweet.text
+%span{:class => 'user'}
+  %img{:src => @tweet.profile_image_url}
+  = "@#{@tweet.from_user}"

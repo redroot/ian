@@ -1,22 +1,59 @@
 html, body
-  :background #000 url('/images/robot.png') 95% 90% no-repeat
+  :background url(images/bg.jpg) no-repeat center 0 #0A0733
   :color #fff
   :height 100%
-  :font-family Courier New, Courier New, Courier6, monospace
+  :font-family "Helvetica Neue", Helvetica, Arial, sans-serif
   :margin 0
   :padding 0
 
   #message
-    :margin 150px 250px 0
+    :text-align center
+    :border-radius 10px
+    :margin 160px auto 0
+    :width 70%
+    :max-height 70%
+    :overflow-x hidden
+    :word-wrap break-word
+    :overflow-y hidden
     :padding 2%
-    :background #fff
-    :color #336392
-    :position absolute
+    :background rgba(0,0,0,0.45)
+    :color #FFFFFF
     :font
-      :size 400%
+      :size 300%
       :weight bold
+    img
+      :width 40px
+      :height 40px
+      :float left
+      :margin-right 10px
+      :margin-top 0px
+    .user
+      :border-top 1px solid #444444
+      :font-size 50%
+      :text-align left
+      :display block
+      :color #F8F179
+      :padding-top 10px
+      :margin-top 10px
+      
+    .user img
+      :margin-right 20px
 
     &.error
-      :background #fff url('/images/error.png') no-repeat 10px 10px
-      :padding-left 150px
+      :background rgba(0,0,0,0.45)
       :min-height 100px
+
+#awards
+  :width 368px
+  :height 77px
+  :background url('images/awards_2011_logo.png') no-repeat
+  :position absolute
+  :top 20px
+  :left 20px
+#uswitch
+  :width 300px
+  :height 61px
+  :position absolute
+  :font-size 22px
+  :top 20px
+  :right 20px
